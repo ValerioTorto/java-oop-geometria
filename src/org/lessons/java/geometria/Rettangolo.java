@@ -16,13 +16,17 @@ public class Rettangolo {
     int perimetro() {
         return 2 * (base + height);
     }
-
+    int area() {
+        return base * height;
+    }
+    //STAMPO I DATI E CALCOLI DEL RETTANGOLO
     @Override
     public String toString() {
         return "Rettangolo {" +
                 "base= " + base  +
                 ", height= " + height +
-                ", perimeter= " + perimetro()  +
+                ", perimeter= " + perimetro() +
+                ", area= " + area() +
                 '}';
     }
 }
