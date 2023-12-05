@@ -6,13 +6,23 @@ public class Rettangolo {
     int height;
 
     //COSTRUTTORE CON PARAMETRI
-     class Rectangle {
-         Rectangle(int base, int height) {
-             base = 3;
-             height = 5;
-         }
-//prova
+
+    Rettangolo(int base, int height) {
+        this.base = base;
+        this.height = height;
     }
 
+    //METODO
+    int perimetro() {
+        return 2 * (base + height);
+    }
 
+    @Override
+    public String toString() {
+        return "Rettangolo {" +
+                "base= " + base  +
+                ", height= " + height +
+                ", perimeter= " + perimetro()  +
+                '}';
+    }
 }
